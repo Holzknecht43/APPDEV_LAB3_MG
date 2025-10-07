@@ -1,0 +1,44 @@
+<style>
+         .form-control {
+          padding: 12px 20px;
+          font-size: 16px;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 10px;
+          transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+      
+        .form-control:focus {
+          border-color: grey;
+          box-shadow: 0 0 5px rgba(197, 196, 195, 0.5);
+          outline: none;
+        }
+      
+        button {
+          padding: 12px 20px;
+          background-color: grey;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          width: 100%;
+          max-width: 200px;
+          transition: background-color 0.3s ease;
+          margin-top: 10px;
+        }
+      
+        button:hover {
+          background-color: rgba(197, 196, 195, 0.5);
+        }
+      </style>
+
+<input 
+[(ngModel)] ="taskTitle"
+name ="taskTitle"
+class ="form-control"
+placeholder="What to do.........." />
+<button (click)="addTask()">Add Task</button>
