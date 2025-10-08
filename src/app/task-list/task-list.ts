@@ -16,5 +16,13 @@ export class TaskList {
   return this.taskService.task.filter(t => t.completed).length;
 }
 
+getRemainingCount() {
+  return this.taskService.task.filter(t => t.completed).length;
+}
+
+deleteTask(index: number) {
+  this.taskService.task.splice(index, 1);
+}
+
 
 }
